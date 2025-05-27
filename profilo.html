@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f4f7f8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      max-width: 900px;
+      width: 100%;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      text-align: center;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+
+    p.about {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0, 119, 182, 0.4);
+    }
+
+    .btn:hover {
+      background: #023e8a;
+      box-shadow: 0 6px 20px rgba(2, 62, 138, 0.6);
+    }
+
+    .contact {
+      font-size: 1.1rem;
+      color: #444;
+      margin-top: 40px;
+    }
+
+    .contact a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Projects section */
+    .projects {
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .projects h2 {
+      color: #0077b6;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0077b6;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .project-item {
+      background: #e6f0fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 8px rgba(0, 119, 182, 0.2);
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #023e8a;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      color: #555;
+    }
+
+    .project-links a {
+      margin-right: 15px;
+      color: #0077b6;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      .btn {
+        width: 100%;
+        padding: 15px 0;
+      }
+      .buttons {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .container {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hello, I'm Ritik Vishwakarma</h1>
+    <p class="about">
+      I am a passionate software developer with experience in building full-stack web applications.
+      I love crafting beautiful, user-friendly websites and improving user experience.
+    </p>
+
+    <div class="buttons">
+      <a href="https://www.linkedin.com/in/ritik-vishwakarma-182086268/" target="_blank" class="btn">LinkedIn</a>
+      <a href="C:/Users/Sandhya%20Vishwakarma/OneDrive/Desktop/RitikRes.pdf" download class="btn">Download Resume</a>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <div class="project-item">
+        <div class="project-title">Movie Seat Booking App</div>
+        <div class="project-desc">
+          Developed a full-stack MERN web application for online movie ticket booking with seat selection, payment integration, and invoice generation.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/movie-seat-booking" target="_blank">GitHub</a>
+          <a href="https://findyour.onrender.com" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-title">Password Reset</div>
+        <div class="project-desc">
+          Created a web-based system for Reseting Password.
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/yourusername/supplier-management" target="_blank">GitHub</a>
+          <a href="https://host-4-ww1l.onrender.com/" target="_blank">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Add more projects here -->
+    </section>
+
+    <div id="contact" class="contact">
+      <p><strong>Email:</strong> <a href="mailto:your.email@example.com">ritikguru41@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 9769597091</p>
+      <p><strong>Location:</strong> Mumbai, India</p>
+    </div>
+  </div>
+
+</body>
+</html>
